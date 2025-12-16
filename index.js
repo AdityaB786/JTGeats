@@ -373,4 +373,27 @@ counter.outerHTML = `<button class="add-btn plus-only">+</button>`;
       }
     }
   });
+  // Contact Form Submit Alert
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Our manager will contact you within 48 hours");
+    contactForm.reset();
+  });
+}
+
+//Search Form Scroll
+const heroSearchForm = document.querySelector(".search-box");
+
+if (heroSearchForm) {
+  heroSearchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    document
+      .getElementById("home-kitchen")
+      .scrollIntoView({ behavior: "smooth" });
+  });
+}
+
 });
