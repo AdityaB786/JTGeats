@@ -47,7 +47,7 @@ body {
   margin: 0 1rem;
   text-decoration: none;
   font-weight: 400;
-  font-size:larger;
+  font-size:18px;
 }
 .nav-links {
   display: flex;
@@ -172,7 +172,7 @@ body {
 /* Kitchen section */
 .kitchen-section {
   background-color: #F7F8FA;
-  padding: 90px 0;
+  padding: 70px 0;
 }
 
 .home-kitchen {
@@ -326,7 +326,7 @@ body {
 /* popular section css */
 .popular-section {
   background-color:#F7F8FA;
-  padding: 4rem 0;
+  position: relative;
 }
 
 
@@ -356,7 +356,7 @@ body {
   height: auto;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 16px;
+  padding: 40px 16px;
 }
 
 .swiper-slide {
@@ -474,89 +474,79 @@ body {
   height: auto;
 }
 
-/* Hover effect only on center slide */
-.swiper-slide:not(.swiper-slide-active) .kitchen-card:hover {
-  transform: none;
+.popular-section .kitchen-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.swiper-slide-active .kitchen-card {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.18);
+  z-index: 3;
+}
+
+.swiper-slide:not(.swiper-slide-active) .kitchen-card {
+  transform: scale(1);
   box-shadow: none;
 }
 
-.swiper-slide-active .kitchen-card:hover {
-  box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.15); 
-  cursor: pointer;
-}
 
-/* Custom Navigation Arrows */
 .custom-prev,
 .custom-next {
-  position: absolute !important;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background-color: var(--text-light);
-  width: 71.5px;
-  height: 71.5px;
+
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  border: var(--primary);
-  border-style: solid;
-  border-width: 3px;
+
+  background-color: var(--primary);
+  border: none;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0;
+  justify-content: center;
+
   cursor: pointer;
+  box-shadow: 0 8px 24px rgba(26, 192, 115, 0.35);
 }
-
-.custom-prev img,
-.custom-next img {
-  width: 40%;
-  height: 40%;
-}
-
 .custom-prev {
-    left: 11rem;
+  left: calc(50% - 620px);
 }
 
 .custom-next {
-    right: 11rem;
+  right: calc(50% - 620px);
 }
 
-.prev-arrow-icon {
-  padding-right: 5px;
+
+.custom-prev img,
+.custom-next img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
 }
 
 .next-arrow-icon {
-  padding-right: 5px;
-   transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .custom-prev::after,
 .custom-next::after {
-  content: none !important;
-}
-
-.custom-prev:hover,
-.custom-next:hover{
-  background-color: var(--primary); 
-  border: none;
-}
-
-.custom-prev:hover img,
-.custom-next:hover img {
-  filter: brightness(0) invert(1);
+  content: none;
 }
 
 /* Request Dish Button */
 .request-btn-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .request-btn {
   background-color: var(--primary);
   padding: 0.75rem 2.5rem;
   margin-top: 3.5rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   border-radius: 10px;
   cursor: pointer;
   border: none;
@@ -708,10 +698,11 @@ body.modal-open {
 .service-section {
   position: relative;
   text-align: center;
-  padding: 48px 2rem 32px; 
+  padding: 12px 2rem 12px; 
   background-color: transparent;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  margin-top: 4rem;
 }
 
 .service-section::after {
@@ -728,12 +719,10 @@ body.modal-open {
 
 .service-text {
   width: 864px;
-  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 16px;
 }
 
 .service-text h2 {
@@ -749,9 +738,6 @@ body.modal-open {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0.2;
-  margin-bottom: 12px;
 }
 
 .video-container {
@@ -791,8 +777,6 @@ body.modal-open {
 .play-icon {
   padding-left: 0.5rem;
 }
-
-
 
 /* Contact section CSS */
 .contact-section {

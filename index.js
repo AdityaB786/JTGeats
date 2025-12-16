@@ -9,108 +9,104 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.toggle("open");
     });
   }
-
-  //Kitchen Section Data
-  const kitchenItems = [
-    {
-      img: "assests/Kitchensection/pizza1.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza2.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: null,
-    },
-    {
-      img: "assests/Kitchensection/pizza3.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer2.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza4.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: null,
-    },
-    {
-      img: "assests/Kitchensection/pizza5.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza6.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: null,
-    },
-    {
-      img: "assests/Kitchensection/pizza7.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer2.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza8.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza1.png",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer.png",
-    },
-    {
-      img: "assests/Kitchensection/pizza2.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: null,
-    },
-    {
-      img: "assests/Kitchensection/pizza3.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: "assests/Kitchensection/offer2.png",
-      
-    },
-    {
-      img: "assests/Kitchensection/pizza4.jpg",
-      title: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "assests/Kitchensection/time.png",
-      offer: null,
-      
-    },
-  ];
+const kitchenItems = [
+  {
+    img: "assests/Kitchensection/pizza1.png",
+    title: "Margherita Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza2.jpg",
+    title: "Farmhouse Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: null,
+  },
+  {
+    img: "assests/Kitchensection/pizza3.jpg",
+    title: "Pepperoni Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer2.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza4.jpg",
+    title: "Veg Supreme Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: null,
+  },
+  {
+    img: "assests/Kitchensection/pizza5.png",
+    title: "Cheese Burst Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza6.png",
+    title: "BBQ Chicken Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: null,
+  },
+  {
+    img: "assests/Kitchensection/pizza7.png",
+    title: "Mexican Green",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer2.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza8.png",
+    title: "Paneer Tikka Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza1.png",
+    title: "Classic Cheese",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza2.jpg",
+    title: "Italian Veg Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: null,
+  },
+  {
+    img: "assests/Kitchensection/pizza3.jpg",
+    title: "Chicken Pizza",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: "assests/Kitchensection/offer2.png",
+  },
+  {
+    img: "assests/Kitchensection/pizza4.jpg",
+    title: "Loaded Veggie",
+    price: "₹190",
+    rating: "4.7",
+    time: "assests/Kitchensection/time.png",
+    offer: null,
+  },
+];
 
   const kitchenGrid = document.getElementById("kitchenGrid");
 
@@ -379,7 +375,7 @@ const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    alert("Our manager will contact you within 48 hours");
+    alert("Our manager will contact you within 48 hours. Thank you!");
     contactForm.reset();
   });
 }
