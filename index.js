@@ -396,4 +396,12 @@ if (heroSearchForm) {
   });
 }
 
+// Disable footer menu & social link navigation
+document.querySelectorAll(".footer-menu a, .footer-social a")
+  .forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+  });
+
 });
